@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--Azza Elgendy -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>using forms</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+			<main>
+				<h3>Rating Steps</h3>
+				<br/><br/>
+				<ol>
+					<li>All fields are required</li>
+					<li>Rating Scale From 1 To 5</li>
+					<li>Rating Starts with 5 as Highest rating 1 for lowest</li>
+					<li>Choose Your Age Group</li>
+					<li>choose your gender</li>
+					<li>Press send</li>
+				</ol>
+				<br/><br/>
+				<form action="mailto:zozamor2002@gmail.com" method="post" enctype="text/plain">
+
+				<fieldset>
+					<legend>Music Rating</legend>
+						<label>
+							Classical	:
+							<select name="classicalrating" required>
+								<option value="5">5</option>
+								<option value="4">4</option>
+								<option value="3">3</option>
+								<option value="2">2</option>
+								<option value="1">1</option>
+							</select>
+						</label>
+						<br/><br/>
+						<label>
+					 	   Flok 		:
+						   	<select name="flockrating" required>
+								<option value="5">5</option>
+								<option value="4">4</option>
+								<option value="3">3</option>
+								<option value="2">2</option>
+								<option value="1">1</option>
+							</select>
+						</label>
+						<br/><br/>
+						<label>
+					 		Jazz 		:
+							<select name="jazzrating" required>
+								<option value="5">5</option>
+								<option value="4">4</option>
+								<option value="3">3</option>
+								<option value="2">2</option>
+								<option value="1">1</option>
+							</select>
+						</label>
+						<br/><br/>
+						<label>
+					 	   Electronics 	:
+						   <select name="electronicsrating" required>
+							   <option value="5">5</option>
+							   <option value="4">4</option>
+							   <option value="3">3</option>
+							   <option value="2">2</option>
+							   <option value="1">1</option>
+						   </select>
+					   </label>
+					   <br/><br/>
+					   <label>
+					 	  Blues 		:
+						  <select name="bluesrating" required>
+							  <option value="5">5</option>
+							  <option value="4">4</option>
+							  <option value="3">3</option>
+							  <option value="2">2</option>
+							  <option value="1">1</option>
+						  </select>
+					  </label>
+				</fieldset>
+				<br/><br/>
+				<fieldset>
+					<legend>age group</legend>
+						<select name="agegroup" required>
+							<option value="1">less Than 18</option>
+							<option value="1">18-25</option>
+							<option value="1">25-35</option>
+							<option value="4">35-45</option>
+							<option value="4">more Than 45</option>
+						</select>
+				</fieldset>
+				<br/><br/>
+				<fieldset>
+					<legend>Gender</legend>
+						<label class="radio-inline">
+						  <input type="radio" name="male"> Male
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="female"> Female
+						</label>
+				</fieldset>
+				<br/><br/>
+					<input type="submit" id="button" value="Send">
+					<input type="reset" id="button1" value="Reset">
+			</form>
+		</main>
+	</body>
+</html>
